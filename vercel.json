@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/(CCC)", "destination": "/CCC/HTML FILES/index.html" }
   ]
 }
