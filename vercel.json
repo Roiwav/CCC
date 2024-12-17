@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/",
+        "HTML FILES": "/html/index.html"
+      }
+    ]
+  }
