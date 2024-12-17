@@ -1,8 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "/",
-        "CCC/HTML FILES": "/html/index.html"
-      }
-    ]
-  }
+  "redirects": [
+    {
+      "source": "/blog/:path*",
+      "destination": "CCC/HTML FILES/Index.html"
+    }
+  ]
+}
