@@ -1,5 +1,3 @@
 {
-"destination": "/HTMLFILES/Index.html"
-    }
-  
-
+  "rewrites": [{ "source": "/CCC", "destination": "/HTML-FILES/Index.html" }]
+}
