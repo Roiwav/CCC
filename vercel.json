@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/CCC/",
-      "destination": "/HTML FILES/index.html"
+      "source": "/ccc",
+      "destination": "/CCC/HTML FILES/index.html"
     }
   ]
 }
