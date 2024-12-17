@@ -1,0 +1,73 @@
+.Map-Title {
+    text-align: center; /* Centers content inside Map-Title */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more modern font */
+    background-color: #f4f4f9; /* Light background color for contrast */
+    padding: 150px 20px; /* Adds padding around the entire Map-Title */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.Map-Title h1 {
+    padding-top: 20px; /* Padding for top */
+    margin: 0; /* Removes default margin */
+    font-size: 36px; /* Larger font size */
+    color: #2a2a2a; /* Dark grey color for the title */
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 3px; /* Adds spacing between letters */
+    font-weight: 600; /* Bold font */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
+}
+
+.Floors1, .Floorground {
+    margin-top: 40px; /* Larger space between floors */
+    background-color: #ffffff; /* White background for the floors */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition effect for hover */
+}
+
+.Floors1:hover, .Floorground:hover {
+    transform: translateY(-10px); /* Elevates the floor on hover */
+}
+
+.Floors1 h2, .Floorground h2 {
+    font-size: 28px; /* Slightly larger font size for headings */
+    color: #007BFF; /* Blue color for the headings */
+    font-weight: 500; /* Medium bold */
+    margin-bottom: 15px; /* More space below the headings */
+    text-transform: capitalize; /* Capitalize the first letter */
+    letter-spacing: 1px; /* Small letter spacing */
+}
+
+.Floors1 img, .Floorground img {
+    display: block; /* Ensures images are block-level */
+    margin: 20px auto; /* Centers the images with space around them */
+    max-width: 90%; /* Makes images slightly smaller for better proportion */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around images */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.Floors1 img:hover, .Floorground img:hover {
+    transform: scale(1.05); /* Enlarges image slightly on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .Map-Title {
+        padding: 20px 10px; /* Less padding on smaller screens */
+    }
+
+    .Map-Title h1 {
+        font-size: 28px; /* Smaller font size on mobile */
+    }
+
+    .Floors1 h2, .Floorground h2 {
+        font-size: 24px; /* Smaller font size for headings */
+    }
+
+    .Floors1 img, .Floorground img {
+        max-width: 100%; /* Make images fully responsive on small screens */
+    }
+}
+

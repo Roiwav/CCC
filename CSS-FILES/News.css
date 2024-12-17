@@ -1,0 +1,210 @@
+/* Base styles (default) */
+.clickable-image {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+}
+.news {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+.Container {
+    background-color: rgba(44, 44, 44, 0.5);
+    padding: 30px;
+    border-radius: 50px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    text-align: center;
+    line-height: 1.8;
+    margin-top: 180px;
+    margin-bottom: 80px;
+}
+.News-header-title{
+    text-align: center;
+    color: #fff;
+    text-shadow: -4px -5px 0 #000, 1px 1px 0 #ccc;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Container img {
+    width: 350px;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Container img:hover {
+    transform: translateY(-5px) scale(1.05) rotate(2deg);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5), -15px -15px 30px rgba(0, 0, 0, 0.2);
+}
+.News-header-title {
+    text-align: center;
+    color: #fff;
+    text-shadow: -4px -5px 0 #000, 1px 1px 0 #ccc;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.news {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .News-header-title {
+        font-size: 40px;
+    }
+    .Container img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .News-header-title {
+        font-size: 30px;
+    }
+    .Container {
+        margin-top: 120px;
+    }
+    .Container img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .News-header-title {
+        font-size: 24px;
+    }
+    .news {
+        font-size: 12px;
+    }
+    
+    .departments-clickable-image img {
+        width: 200px;
+    }
+    .departments-clickable-image {
+        padding: 20px;
+    }
+} 
+.Main-container{
+background-color: rgba(44, 44, 44, 0.5);
+  color: #393939;
+  padding: 30px auto; /* Add some space inside the container */
+  border-radius: 30px; /* Optional: Rounds the corners of the container */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for floating effect */
+  backdrop-filter: blur(4px); /* Optional: Apply blur effect to the background */
+  max-width: auto; /* Restrict the width for better readability */
+  line-height: 1.8; /* Adjust line height for better readability */
+  margin-top: 180px; /* Ensure it starts after the fixed navbar */
+  margin-bottom: 20px; /* Add some space below to ensure separation */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto; /* Center the container horizontally */
+  padding-bottom: 20px
+}
+.School-activities-announcements {
+    text-align: center;
+    color: #fff;
+    text-shadow: -4px -5px 0 #000, 1px 1px 0 #ccc; /* Creates a 3D embossed look */
+    font-size: 2rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+/* Carousel Container */
+.carousel-container {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border: 2px solid #9b9b9b;
+    border-radius: 10px;
+    background-color: rgba(44, 44, 44, 0.5);
+    box-shadow: 0 4px 10px white;
+    margin-top: 20px;
+    margin-bottom: 80px; /* Add enough space below */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+  }
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%
+    }
+  
+    .carousel-image {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 80px;
+    }
+    .carousel-image img{
+        
+        display: block;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+         margin-left: auto;
+         margin-right: auto;
+    }
+     
+    /*controls*/
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-top: 2px solid #ccc;
+       }
+    
+      .controls button {
+        background-color:  rgba(23, 23, 23, 0.808);;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+      }
+    
+      .controls button:disabled {
+        background-color:  rgba(23, 23, 23, 0.808);
+        cursor: not-allowed;
+      }
+    
+      .controls .counter {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      /*back to newspage button*/
+      .news-home-button {
+        position: fixed;
+        font-size: 1px;
+        bottom:5px; /* Distance from the bottom of the screen */
+        left: 5px;   /* Distance from the left of the screen */
+        z-index: 1000; /* Ensures it stays above other content */
+    }
+    
+    .news-home-button button {
+        padding: 10px 20px;
+        background-color: #006aff;;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .news-home-button button:hover {
+        background-color: #555;
+    }
+    
+    
