@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/Roiwav/CCC", "destination": "/CCC/HTML FILES/Index.html" }
+    { "source": "/Roiwav/CCC", "destination": "/Roiwav/CCC/HTML FILES/Index.html" }
   ]
 }
