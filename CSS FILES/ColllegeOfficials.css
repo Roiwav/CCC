@@ -1,0 +1,47 @@
+/*AboutUs Container */
+.College-Offcials{
+    background-color:  rgba(44, 44, 44, 0.5);
+    padding: 30px auto; /* Add some space inside the container */
+    border-radius: 50px; /* Optional: Rounds the corners of the container */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Optional: Define the font style */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for floating effect */
+    backdrop-filter: blur(4px); /* Optional: Apply blur effect to the background */
+    text-align: center;
+    max-width: auto; /* Restrict the width for better readability */
+    line-height: 1.8; /* Adjust line height for better readability */
+    margin-top: 120px; /* Ensure it starts after the fixed navbar */
+    margin-bottom:80px;
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+}
+.College-Offcials-Title{
+    text-align: center;
+    color: #fff;
+    text-shadow: -4px -5px 0 #000, 1px 1px 0 #ccc; /* Creates a 3D embossed look */
+    font-size: 50px auto;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+.College-Offcials-Images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
+    padding-bottom: 80px;
+    
+}
+img{
+ border-radius: 20px;
+}
+.College-Offcials-Images img {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slightly moved down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.College-Offcials-Images img.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Moves to the original position */
+}
+
+
