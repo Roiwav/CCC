@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/https://ccc-ruddy-eight.vercel.app/CCC", "destination": "/CCC/HTML FILES/Index.html" }
+    { "source": "/CCC", "destination": "/CCC/HTML FILES/Index.html" }
   ]
 }
