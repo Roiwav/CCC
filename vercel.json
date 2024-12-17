@@ -1,8 +1,5 @@
 {
   "rewrites": [
-    {
-      "source": "/ccc-silk-two.vercel.app",
-      "destination": "/CCC/HTML FILES/index.html"
-    }
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
