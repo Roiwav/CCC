@@ -1,0 +1,81 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+  align-items: center;
+  justify-content: space-between; /* Adjusts spacing between elements */
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: #9a9a9a;
+  height: auto; /* Adjust height dynamically for smaller screens */
+}
+
+.Logo-Grey {
+  margin-bottom: 20px; /* Adds spacing between items on smaller screens */
+}
+
+.Logo-Grey img {
+  width: 100%; /* Ensures the logo resizes responsively */
+  max-width: 300px; /* Sets a maximum width */
+  height: auto;
+}
+
+.footer-text {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-text h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.footer-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer-text a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stacks items vertically */
+    text-align: center;
+  }
+
+  .Logo-Grey {
+    margin-bottom: 20px; /* Adds space between logo and text */
+  }
+
+  .footer-text h2 {
+    font-size: 20px; /* Adjust heading size for smaller screens */
+  }
+
+  .footer-text p {
+    font-size: 14px; /* Adjust text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .Logo-Grey img {
+    max-width: 200px; /* Further reduce logo size on very small screens */
+  }
+
+  .footer-text h2 {
+    font-size: 18px;
+  }
+
+  .footer-text p {
+    font-size: 12px;
+  }
+}

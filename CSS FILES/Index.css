@@ -1,0 +1,298 @@
+/* General styles for slideshow container */
+.slideshow-container {
+  background-color: rgba(44, 44, 44, 0.5);
+  padding: 30px;
+  border-radius: 50px;
+  margin: 120px auto 180px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  line-height: 1.8;
+  max-width: 2000px;
+  position: relative;
+  overflow: hidden; /* Ensures content stays inside container */
+  height: 500px; /* Fixed height to prevent overflow issues */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease; /* Smooth background change */
+}
+
+/* Slide images */
+.mySlides {
+  display: none;
+  position: absolute;
+  width: 100%; /* Image spans entire container */
+  height: 100%; /* Matches container height */
+  text-align: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition for fading */
+}
+
+.mySlides.active {
+  display: block;
+  opacity: 1;
+}
+
+.mySlides img {
+  width: auto;
+  max-height: 100%; /* Ensure images are contained vertically */
+  max-width: 100%; /* Ensure images are contained horizontally */
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  border-radius: 50px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Hover effect for images */
+.mySlides img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+/* Navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  user-select: none;
+  z-index: 2; /* Keeps buttons above the slides */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth button transition */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Adjust positioning of navigation buttons */
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Slide indicators (dots) */
+.dot-container {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2; /* Keeps dots above the slides */
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active-dot {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+ /* CCC Promotional Video */
+
+/* Container for both video and Facebook plugin */
+.media-container {
+  background-color: rgba(44, 44, 44, 0.5);
+  padding: 30px; /* Increased padding for better spacing inside the container */
+  border-radius: 50px;
+  margin: 80px auto; /* Center the entire container horizontally and vertically */
+  margin-top: -100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  line-height: 1.8;
+  max-width: auto; /* Defined max-width for proper alignment */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  gap: 10px; /* Space between the video and Facebook plugin */
+  align-items: center; /* Center content vertically */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: -4px -5px 0 #000, 1px 1px 0 #ccc;
+  font-size: 2.5rem; /* Adjusted font size for responsiveness */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%; /* Full width for proper alignment */
+  margin: 20px 0 40px; /* Top and bottom margins for better spacing */
+}
+
+/* YouTube video settings */
+.youtube-video {
+  flex: 1 1 45%; /* Takes 45% of container's width */
+  max-width: 1100px; /* Limit maximum width */
+  margin: 0 auto; /* Center the video */
+  height: auto; /* Allow dynamic height adjustment */
+  min-height: 250px; /* Ensure a minimum height */
+  padding: 10px; /* Add padding inside the video container */
+}
+
+/* Facebook plugin container */
+.fb-container {
+  flex: 1 1 45%; /* Takes 45% of container's width */
+  max-width: 700px; /* Limit maximum width */
+  margin: 0 auto; /* Center the container */
+  overflow: hidden;
+  height: auto; /* Allow dynamic height */
+  min-height: 700px; /* Set a reasonable minimum height */
+  padding: 10px; /* Add padding for better spacing inside the container */
+}
+
+/* Style for iframe inside Facebook plugin container */
+.fb-container iframe {
+  border-radius: 50px;
+  overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .media-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+    gap: 10px; /* Reduce gap between elements */
+  }
+
+  .youtube-video, .fb-container {
+    flex: 1 1 100%; /* Full width for both elements */
+    max-width: 100%; /* Remove width restrictions */
+    min-height: 200px; /* Adjust height for smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+    margin-bottom: 20px;
+  }
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Further reduce font size for very small screens */
+  }
+
+  .youtube-video, .fb-container {
+    min-height: 150px; /* Further adjust height */
+    padding: 5px; /* Reduce padding for smaller devices */
+  }
+}
+
+
+/* Align the flip containers inline */
+.flip-container-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+  align-items: center; /* Ensures they are vertically aligned */
+  gap: 10px; /* Adds 10px space between the cards */
+  margin: 0 auto; /* Centers the wrapper itself */
+}
+
+/* The flip card container */
+.flip-card {
+  background-color: transparent;
+  width: 500px; /* Set consistent width */
+  height: 500px; /* Ensure a square container for front and back */
+  perspective: 1000px; /* 3D effect */
+}
+
+/* Container for front and back sides */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Flip effect on hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back sides */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%; /* Matches container width */
+  height: 100%; /* Matches container height */
+  -webkit-backface-visibility: hidden; /* Safari support */
+  backface-visibility: hidden;
+  border-radius: 50px; /* Consistent styling for front and back */
+}
+
+/* Front side (image or content) */
+.flip-card-front {
+  color: black;
+  background-color: transparent; /* Fallback color */
+  overflow: hidden; /* To respect border radius */
+}
+
+/* Back side (text content) */
+.flip-card-back {
+  background-color: white; /* Styling for back */
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg); /* Rotate the back side */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the text */
+}
+
+/* Text styling for the back */
+.flip-card-back p {
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: justify;
+  text-align-last: center;
+  margin: 0; /* Remove unnecessary margin */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Image inside the front side */
+.flip-card-front img {
+  width: 100%; /* Adjust to fit container width */
+  height: 100%; /* Maintain container height */
+  border-radius: 50px; /* Consistent border radius */
+  object-fit: cover; /* Ensure proper image scaling */
+  overflow: hidden;
+}
+
+.MAIN-FLIP-CONTAINER{
+  background-color: rgba(44, 44, 44, 0.5);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    padding: 30px;
+    border-radius: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    max-width: 2000px;
+    line-height: 1.8;
+    margin: 80px auto;
+}
